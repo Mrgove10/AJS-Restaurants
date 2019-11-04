@@ -9,7 +9,6 @@ angular.module('myApp').directive('restaurantlist', [function () {
         link: function (scope) {
             scope.selectRestau = function (rest) {
                 scope.restaudetail = rest;
-                console.log(scope.restaudetail);
             }
         }
     };

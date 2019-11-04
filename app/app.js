@@ -17,6 +17,7 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
 // Declare app level module which depends on views, and core components
 angular.module('myApp', [])
   .controller('MainController', ['$scope', function ($scope) {
+    console.log("👋 Hello Thibaut")
     $scope.restaurants =
     [
       {
