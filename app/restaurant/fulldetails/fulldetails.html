@@ -1,14 +1,18 @@
 <div ng-if="restaudetail">
-    <h3>{{restaudetail.name}}</h3>
-    📍 {{restaudetail.address.number}} {{restaudetail.address.road}} {{restaudetail.address.city}}
-    {{restaudetail.address.state}}</br>
-    🍩 {{restaudetail.about}}</br>
-    📅 {{restaudetail.dateLastVisite}}</br>
-    ⭐ {{restaudetail.noteLastVisite}}</br>
-    👩‍🍳 {{restaudetail.ownerName.first}} {{restaudetail.ownerName.last}}</br>
-    📧 {{restaudetail.email}}</br>
-    💬 {{restaudetail.lastcomment}}</br>
+  <h2>{{restaudetail.name}}</h2>
+  📍 {{restaudetail.address.number}} {{restaudetail.address.road}} {{restaudetail.address.city}}
+  {{restaudetail.address.state}}</br>
+  🍩 {{restaudetail.about}}</br>
+  👩‍🍳 {{restaudetail.ownerName.first}} {{restaudetail.ownerName.last}}</br>
+  📧 {{restaudetail.email}}</br>
+<hr>
+<h4>Your thoughts</h4>
+  📅 {{restaudetail.dateLastVisite}}</br>
+  ⭐ {{restaudetail.noteLastVisite}}</br>
+  💬 {{restaudetail.lastcomment}}</br></br>
+  <updateform></updateform>
 </div>
+
 <!--
        {
         "guid": "bb79caab-194d-410d-9a07-04ba7dc79cf1",
