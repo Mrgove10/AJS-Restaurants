@@ -23,6 +23,23 @@ angular.module('myApp', [])
       ownerName: 'Montanier',
       email: 'Montanier',
       lastComment: "coucou"
+    },
+    {
+      name: 'Thibaut',
+      adress: 'Montanier',
+      dateLastVisite: 'Montanier',
+      noteLastVisite: 'Montanier',
+      ownerName: 'Montanier',
+      email: 'Montanier',
+      lastComment: "coucou"
+    },{
+      name: 'Thibaut',
+      adress: 'Montanier',
+      dateLastVisite: 'Montanier',
+      noteLastVisite: 'Montanier',
+      ownerName: 'Montanier',
+      email: 'Montanier',
+      lastComment: "coucou"
     }]
   }]
   );

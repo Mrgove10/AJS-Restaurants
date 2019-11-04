@@ -23,13 +23,14 @@
   <script src="core/version/version-directive.js"></script>
   <script src="core/version/interpolate-filter.js"></script>
 
-  <script src="restaurant/restaurantlist.js"></script>
+  <script src="restaurant/list/restaurantlist.js"></script>
+  <script src="restaurant/detail/restaurantdetail.js"></script>
 
 </head>
 
 <body ng-controller="MainController">
 <h1>test</h1>
-  <restaurantlist></restaurantlist>
+  <restaurantlist restaurants="restaurants"></restaurantlist>
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
