@@ -1,2 +1,31 @@
-details on a restaurant
-<h3>{{restaudetail.name}}</h3>
+<div ng-if="restaudetail">
+    <h3>{{restaudetail.name}}</h3>
+    📍 {{restaudetail.address.number}} {{restaudetail.address.road}} {{restaudetail.address.city}}
+    {{restaudetail.address.state}}</br>
+    🍩 {{restaudetail.about}}</br>
+    📅 {{restaudetail.dateLastVisite}}</br>
+    ⭐ {{restaudetail.noteLastVisite}}</br>
+    👩‍🍳 {{restaudetail.ownerName.first}} {{restaudetail.ownerName.last}}</br>
+    📧 {{restaudetail.email}}</br>
+    💬 {{restaudetail.lastcomment}}</br>
+</div>
+<!--
+       {
+        "guid": "bb79caab-194d-410d-9a07-04ba7dc79cf1",
+        "name": "Bryant",
+        "address": {
+          "number": 773,
+          "road": "Herzl Street",
+          "city": "Makena",
+          "state": 69
+        },
+        "email": "a.a@gmail.com",
+        "about": "Adipisicing nisi aute occaecat sint Lorem incididunt. Qui est pariatur adipisicing sint ut excepteur sunt adipisicing. Enim officia deserunt quis et est magna. Nostrud adipisicing in velit commodo. Dolor excepteur proident veniam nulla non eu Lorem.",
+        "ownerName": {
+          "first": "Gonzales",
+          "last": "Perez"
+        },
+        "dateLastVisite": "Fri May 05 2006 08:39:03 GMT+0000 (UTC)",
+        "noteLastVisite": 1
+      }
+-->
