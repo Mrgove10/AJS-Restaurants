@@ -7,7 +7,7 @@
   <!--  recherche : <input type="text" placeholder="Entrez votre recherche" ng-model="searchText" />-->
     <ul>
         <li ng-repeat="rest in restaurants | filter:searchText | orderBy:'prenom'" ng-click="selectRestau(rest)">
-            <restaurantdetail indivpers="pl"></restaurantdetail>
+            <restaurantdetail restau="rest"></restaurantdetail>
         </li>
     </ul>
 </div>
