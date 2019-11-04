@@ -45,13 +45,13 @@
 </head>
 
 <body ng-controller="MainController">
-  <h1>Restaurants in grenoble</h1>
+  <h1>Restaurants</h1>
   <div class="row">
     <div class="col col-md-6">
-      <restaurantlist restaurants="restaurants"></restaurantlist>
+      <restaurantlist restaurants="restaurants" restaudetail="restaudetail"></restaurantlist>
     </div>
     <div class="col col-md-6">
-      <fulldetails restau="restau"></fulldetails>
+      <fulldetails restaudetail="restaudetail"></fulldetails>
     </div>
   </div>
   <!--[if lt IE 7]>

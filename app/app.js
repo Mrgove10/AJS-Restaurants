@@ -16,7 +16,7 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
 angular.module('myApp', [])
   .controller('MainController', ['$scope', function ($scope) {
     $scope.restaurants = [{
-      name: 'Thibaut',
+      name: 'a',
       adress: 'Montanier',
       dateLastVisite: 'Montanier',
       noteLastVisite: 'Montanier',
@@ -25,7 +25,7 @@ angular.module('myApp', [])
       lastComment: "coucou"
     },
     {
-      name: 'Thibaut',
+      name: 'b',
       adress: 'Montanier',
       dateLastVisite: 'Montanier',
       noteLastVisite: 'Montanier',
@@ -33,7 +33,7 @@ angular.module('myApp', [])
       email: 'Montanier',
       lastComment: "coucou"
     },{
-      name: 'Thibaut',
+      name: 'c',
       adress: 'Montanier',
       dateLastVisite: 'Montanier',
       noteLastVisite: 'Montanier',

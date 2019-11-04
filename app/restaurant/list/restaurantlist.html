@@ -1,7 +1,19 @@
 <div>
+    <table style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
     recherche : <input type="text" placeholder="Entrez votre recherche" ng-model="searchText" />
     <ul>
-        <li ng-repeat="rest in restaurants | filter:searchText | orderBy:'prenom'" ng-click="selectRestau(rest)">
+        <li ng-repeat="rest in restaurants " ng-click="selectRestau(rest)">
             <restaurantdetaillist restau="rest"></restaurantdetaillist>
         </li>
     </ul>

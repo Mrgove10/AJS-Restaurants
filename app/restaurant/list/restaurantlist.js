@@ -3,12 +3,13 @@ angular.module('myApp').directive('restaurantlist', [function () {
     return {
         templateUrl: 'restaurant/list/restaurantlist.html',
         scope: {
-            restaurants: '=restaurants'
+            restaurants: '=',
+            restaudetail:'='
         },
         link: function (scope) {
             scope.selectRestau = function (rest) {
-                scope.restau = rest;
-                console.log(scope.restau);
+                scope.restaudetail = rest;
+                console.log(scope.restaudetail);
             }
         }
     };
