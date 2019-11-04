@@ -1,15 +1,15 @@
 'use strict';
-var myModule = angular.module('myApp');
-myModule.directive('personnes', [function () {
+angular.module('myApp').directive('restaurantlist', [function () {
     return {
-        templateUrl: '/graphics/madirective.html',
+        templateUrl: 'restaurant/restaurantlist.html',
         scope: {
-            personnes: '=lespersonnes'
+            restaurants: '=restaurantList'
         },
-        link: function (scope) {         
+        link: function (scope) {
             scope.selectPersonne = function (p) {
                 scope.personne = p;
             }
         }
     };
-}]);    
+}
+]);
