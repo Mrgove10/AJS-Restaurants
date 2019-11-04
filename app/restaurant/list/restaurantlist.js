@@ -8,6 +8,7 @@ angular.module('myApp').directive('restaurantlist', [function () {
         link: function (scope) {
             scope.selectRestau = function (rest) {
                 scope.restau = rest;
+                console.log(scope.restau);
             }
         }
     };

@@ -1,13 +1,8 @@
-<p>C'est ta première application</p>
-<!--
-<persform personne="personne"></persform>
--->
-<hr>
 <div>
-  <!--  recherche : <input type="text" placeholder="Entrez votre recherche" ng-model="searchText" />-->
+    recherche : <input type="text" placeholder="Entrez votre recherche" ng-model="searchText" />
     <ul>
         <li ng-repeat="rest in restaurants | filter:searchText | orderBy:'prenom'" ng-click="selectRestau(rest)">
-            <restaurantdetail restau="rest"></restaurantdetail>
+            <restaurantdetaillist restau="rest"></restaurantdetaillist>
         </li>
     </ul>
 </div>
