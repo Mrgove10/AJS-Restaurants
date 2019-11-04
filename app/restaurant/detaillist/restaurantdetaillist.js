@@ -1,6 +1,5 @@
 'use strict';
-var myModule = angular.module('myApp');
-myModule.directive('restaurantdetaillist', [function () {
+angular.module('myApp').directive('restaurantdetaillist', [function () {
     return {
         templateUrl: 'restaurant/detaillist/restaurantdetaillist.html',
         scope: {
