@@ -10,10 +10,19 @@
             <td>{{rest.name}} </td>
             <td>{{rest.address.number}} {{rest.address.road}} {{rest.address.city}} {{rest.address.state}}</td>
             <td>{{rest.dateLastVisite}}</td>
-            <td>{{rest.noteLastVisite}}</td>
+            <!--<td>{{rest.noteLastVisite}}</td>-->
+
+            <td ng-switch="rest.noteLastVisite">
+                <div ng-switch-when="1">⭐</div>
+                <div ng-switch-when="2">⭐⭐</div>
+                <div ng-switch-when="3">⭐⭐⭐</div>
+                <div ng-switch-when="4">⭐⭐⭐⭐</div>
+                <div ng-switch-when="5">⭐⭐⭐⭐⭐</div>
+            </td>
+
             <!--
             <restaurantdetaillist restau="rest"></restaurantdetaillist>
-        -->
+            -->
         </tr>
     </table>
 </div>

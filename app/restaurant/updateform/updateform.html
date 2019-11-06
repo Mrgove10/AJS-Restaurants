@@ -1,10 +1,18 @@
 <h4>Your info</h4>
-<form>
+<form name="updateform" novalidate>
     <div class="form-group">
+        <div style="height: 24px; color: red;">
+            <div ng-show="updateform.commentaire.$invalid && updateform.commentaire.$dirty">
+                    entree une date</div>
+        </div>
         <label for="dateinput">Last visit :</label>
         <input required type="date" class="form-control" id="dateinput" ng-model="restaudetail.dateLastVisite">
     </div>
     <div class="form-group">
+        <div style="height: 24px; color: red;">
+            <div ng-show="updateform.commentaire.$invalid && updateform.commentaire.$dirty">
+             entreeee une note</div>
+        </div>
         <label for="rating">Notation :</label>
         <select class="form-control" id="rating" required ng-model="restaudetail.noteLastVisite">
             <option value=""></option>
@@ -14,11 +22,21 @@
             <option value="4">⭐⭐⭐⭐</option>
             <option value="5">⭐⭐⭐⭐⭐</option>
         </select><br />
+        <div ng-show="updateform.note.$invalid && updateform.note.$error.required">Veuillez écrire
+            une note.
+        </div>
     </div>
     <div class="form-group">
+        <div style="height: 24px; color: red;">
+            <div ng-show="updateform.commentaire.$invalid && updateform.commentaire.$dirty">
+                Veuillez écrire
+                un
+                commentaire.</div>
+        </div>
         <label for="commentinput">Your comment :</label>
-        <textarea required type="text" class="form-control" id="commentinput" ng-model="restaudetail.lastcomment">
+        <textarea required maxlength="255" type="textarea" class="form-control" id="commentinput"
+            ng-model="restaudetail.lastcomment">
     </div>
-    <button type="submit" class="btn btn-primary" ng-click="sumbit()">Submit ✔</button>
+    <button type="submit" class="btn btn-primary" ng-click="sumbit()" ng-disabled="updateform.$invalid">Submit ✔</button>
     <button class="btn btn-danger" ng-click="cancel()">Cancel ❌</button>
 </form>
