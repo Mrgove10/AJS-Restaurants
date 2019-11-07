@@ -1,15 +1,16 @@
 <div ng-if="restaudetail">
   <h2>{{restaudetail.name}}</h2>
-  📍 Location : {{restaudetail.address.number}} {{restaudetail.address.road}} {{restaudetail.address.city}}
+  <b>📍 Location :</b> {{restaudetail.address.number}} {{restaudetail.address.road}} {{restaudetail.address.city}}
   {{restaudetail.address.state}}</br>
-  🍩 Description : {{restaudetail.about}}</br>
-  👩‍🍳 Owner : {{restaudetail.ownerName.first}} {{restaudetail.ownerName.last}}</br>
-  📧 Email : {{restaudetail.email}}</br>
+  <b>🍩 Description :</b> {{restaudetail.about}}</br>
+  <b>👩‍🍳 Owner :</b> {{restaudetail.ownerName.first}} {{restaudetail.ownerName.last}}</br>
+  <b>📧 Email :</b> {{restaudetail.email}}</br>
   <hr>
   <h4>Your last thoughts</h4>
-  📅 Last visite : {{restaudetail.dateLastVisite | date:'yyyy-MM-dd'}}</br>
-  💬 Last comment : {{restaudetail.lastcomment}} </br>
-  ⭐ Last rating : <ng-switch on="restaudetail.noteLastVisite">
+  <b>📅 Last visite :</b> {{restaudetail.dateLastVisite | date:'yyyy-MM-dd'}}</br>
+  <b>💬 Last comment :</b> {{restaudetail.lastcomment}} </br>
+  <b>⭐ Last rating :</b>
+  <ng-switch on="restaudetail.noteLastVisite">
     <span ng-switch-when="1">⭐</span>
     <span ng-switch-when="2">⭐⭐</span>
     <span ng-switch-when="3">⭐⭐⭐</span>
