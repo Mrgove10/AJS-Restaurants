@@ -7,7 +7,7 @@
         </div>
         <label for="dateinput">Last visit :</label>
         <input required type="date" class="form-control" id="dateinput" name="updatedate"
-            ng-model="restaudetail.dateLastVisite">
+            ng-model="myrestau.dateLastVisite">
     </div>
     <div class="form-group">
         <div style="height: 24px; color: red;">
@@ -15,7 +15,7 @@
                 entreeee une note</div>
         </div>
         <label for="rating">Notation :</label>
-        <select class="form-control" id="rating" required ng-model="restaudetail.noteLastVisite" name="updatenote">
+        <select class="form-control" id="rating" required ng-model="myrestau.noteLastVisite" name="updatenote">
             <option value=""></option>
             <option value="1">⭐</option>
             <option value="2">⭐⭐</option>
@@ -29,12 +29,13 @@
             <div ng-show="updateform.updatecomment.$invalid && updateform.updatecomment.$dirty">
                 Veuillez écrire
                 un
-                commentaire.</div>
+                commentaire.
+            </div>
         </div>
         <label for="commentinput">Your comment :</label>
         <textarea required maxlength="255" type="textarea" class="form-control" id="commentinput"
-            ng-model="restaudetail.lastcomment" name="updatecomment">
+            ng-model="myrestau.lastcomment" name="updatecomment"></textarea>
     </div>
-    <button type="submit" class="btn btn-primary" ng-click="sumbit()" ng-disabled="updateform.$invalid">Submit ✔</button>
+    <button type="submit" class="btn btn-primary" ng-click="valider()" ng-disabled="updateform.$invalid">Submit ✔</button>
     <button class="btn btn-danger" ng-click="cancel()">Cancel ❌</button>
 </form>

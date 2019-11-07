@@ -6,18 +6,14 @@ angular.module('myApp').directive('updateform', [function () {
             restaudetail: '='
         },
         link: function (scope) {
-            scope.$watch(() => scope.personne, function () {
-              //  console.log("Changed");
+            scope.$watch(() => scope.restaudetail, function () {
                 scope.myrestau = angular.copy(scope.restaudetail);
                 scope.updateform.$setPristine();
             }),
             scope.valider = function () {
-               // console.log("Validate");
                 angular.copy(scope.myrestau, scope.restaudetail);
-                scope.updateform.$setPristine();
             },
             scope.annuler = function () {
-               // console.log("Undo");
                 scope.myrestau = angular.copy(scope.restaudetail);
                 scope.updateform.$setPristine();
             }
