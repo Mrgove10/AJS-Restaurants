@@ -27,7 +27,7 @@ angular.module('myApp', [])
           "number": 766,
           "road": "Sullivan Street",
           "city": "Mathews",
-          "state": 82
+          "state": "New York"
         },
         "email": "a.a@gmail.com",
         "about": "Minim adipisicing laborum et eiusmod reprehenderit commodo exercitation officia adipisicing. Occaecat ut non nisi sunt fugiat quis eu veniam deserunt. Minim ad anim pariatur incididunt velit aute consectetur cupidatat cupidatat enim ea.",
@@ -46,7 +46,7 @@ angular.module('myApp', [])
           "number": 202,
           "road": "Garden Place",
           "city": "Utting",
-          "state": 12
+          "state": "Ohio"
         },
         "email": "a.a@gmail.com",
         "about": "Dolore voluptate veniam elit esse et dolor cupidatat ad ipsum ipsum consequat. Duis eu eu officia aliquip ea reprehenderit sit consectetur incididunt in. Nostrud cillum Lorem eiusmod nisi fugiat ipsum adipisicing. Non ea eu enim deserunt veniam dolor et fugiat duis voluptate.",
@@ -65,7 +65,7 @@ angular.module('myApp', [])
           "number": 241,
           "road": "Forest Place",
           "city": "Sultana",
-          "state": 35
+          "state": "Wisconson"
         },
         "email": "a.a@gmail.com",
         "about": "Occaecat laboris eiusmod exercitation ad. Ex Lorem minim nostrud aute proident esse ipsum minim in dolore nulla sint laborum. Elit ullamco id duis commodo et ea velit amet cillum. Occaecat ex ex id deserunt fugiat adipisicing do. Qui excepteur irure ad laboris. Commodo in deserunt ex eu voluptate cillum.",
@@ -84,7 +84,7 @@ angular.module('myApp', [])
           "number": 419,
           "road": "Kings Place",
           "city": "Herlong",
-          "state": 15
+          "state": "California"
         },
         "email": "a.a@gmail.com",
         "about": "Mollit nulla exercitation non aliqua eu reprehenderit occaecat. Tempor non veniam reprehenderit velit adipisicing elit officia est ea cupidatat laboris exercitation enim reprehenderit. Lorem est velit sunt laboris dolore aute ea in. Voluptate quis nulla laborum adipisicing ea. Irure non occaecat culpa aute aliquip fugiat in adipisicing officia consequat veniam ipsum esse mollit. Est occaecat amet veniam magna anim nisi consequat sint dolor in sunt dolor id.",
@@ -103,7 +103,7 @@ angular.module('myApp', [])
           "number": 876,
           "road": "Cherry Street",
           "city": "Cliffside",
-          "state": 19
+          "state": "Washinton"
         },
         "email": "a.a@gmail.com",
         "about": "Est cillum cillum laboris proident commodo irure qui ad. Voluptate magna proident et mollit eu laborum ea Lorem voluptate. Sunt excepteur eiusmod ad anim adipisicing. Est exercitation labore nulla irure ex nulla veniam velit aliquip voluptate proident.",
@@ -122,7 +122,7 @@ angular.module('myApp', [])
           "number": 211,
           "road": "Gotham Avenue",
           "city": "Germanton",
-          "state": 64
+          "state": "Texas"
         },
         "email": "a.a@gmail.com",
         "about": "Sunt duis anim id enim consequat officia proident. Excepteur sint fugiat in occaecat elit voluptate. Elit reprehenderit commodo dolor do cillum incididunt pariatur sit quis dolore. Cupidatat aute laboris ea aliqua laboris occaecat.",

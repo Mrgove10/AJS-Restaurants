@@ -1,17 +1,15 @@
 <div>
     <table class="table table-striped" style="width:100%">
         <tr>
-            <th>📛</th>
-            <th>📍</th>
-            <th>📅</th>
-            <th>⭐</th>
+            <th>📛 Name</th>
+            <th>📍 Location</th>
+            <th>📅 Last visite</th>
+            <th>⭐ Last visite</th>
         </tr>
         <tr ng-repeat="rest in restaurants" ng-click="selectRestau(rest)" style="cursor:pointer;">
             <td>{{rest.name}} </td>
             <td>{{rest.address.number}} {{rest.address.road}} {{rest.address.city}} {{rest.address.state}}</td>
             <td>{{rest.dateLastVisite | date:'yyyy-MM-dd'}}</td>
-            <!--<td>{{rest.noteLastVisite}}</td>-->
-
             <td ng-switch="rest.noteLastVisite">
                 <div ng-switch-when="1">⭐</div>
                 <div ng-switch-when="2">⭐⭐</div>
@@ -19,10 +17,6 @@
                 <div ng-switch-when="4">⭐⭐⭐⭐</div>
                 <div ng-switch-when="5">⭐⭐⭐⭐⭐</div>
             </td>
-
-            <!--
-            <restaurantdetaillist restau="rest"></restaurantdetaillist>
-            -->
         </tr>
     </table>
 </div>
