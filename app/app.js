@@ -15,7 +15,7 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
 //https://next.json-generator.com/NJAqexKqP
 
 // Declare app level module which depends on views, and core components
-angular.module('myApp', [])
+angular.module('myApp', ['mainservice', 'ngRoute', 'graphicsservice'])
   .controller('MainController', ['$scope', function ($scope) {
     console.log("👋 Hello Thibaut")
     $scope.restaurants =
@@ -136,4 +136,12 @@ angular.module('myApp', [])
         }
       ]
   }]
-  );
+  ).config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+    $locationProvider.html5Mode(true);
+    $routeProvider.when('/', {
+      templateUrl: 'views/view1/view1.html',
+      controller: 'View1Ctrl'
+    });
+    $routeProvider.otherwise({ redirectTo: '/home' });
+  }]);
+
