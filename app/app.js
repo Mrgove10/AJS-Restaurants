@@ -1,21 +1,5 @@
 'use strict';
-
-// Declare app level module which depends on views, and core components
-/*angular.module('myApp', [
-  'ngRoute',
-  'myApp.version'
-]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
-
-  $routeProvider.otherwise({redirectTo: '/view1'});
-}]);
-*/
-
-//https://next.json-generator.com/NJAqexKqP
-
-// Declare app level module which depends on views, and core components
-angular.module('myApp', ['mainservice', 'ngRoute', 'graphicsservice'])
+angular.module('myApp', ['mainservice', 'ngRoute'])
   .controller('MainController', ['$scope', function ($scope) {
     console.log("👋 Hello Thibaut")
     $scope.restaurants =
@@ -136,10 +120,11 @@ angular.module('myApp', ['mainservice', 'ngRoute', 'graphicsservice'])
         }
       ]
   }]
-  ).config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+  ).config(['$routeProvider', '$locationProvider', 
+  function ($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
     $routeProvider.when('/', {
-      templateUrl: 'views/view1/view1.html',
+      templateUrl: '../restaurant/restau.html',
       controller: 'View1Ctrl'
     });
     $routeProvider.otherwise({ redirectTo: '/home' });

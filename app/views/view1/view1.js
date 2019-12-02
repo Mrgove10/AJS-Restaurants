@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.view1', ['ngRoute', 'graphicsservice', 'mainservice'])
+angular.module('myApp.view1', ['ngRoute',  'mainservice'])
 
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/view1', {
