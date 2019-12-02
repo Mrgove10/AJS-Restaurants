@@ -125,8 +125,8 @@ angular.module('myApp', ['mainservice', 'ngRoute'])
     $locationProvider.html5Mode(true);
     $routeProvider.when('/', {
       templateUrl: '../restaurant/restau.html',
-      controller: 'View1Ctrl'
+      controller: 'MainController'
     });
-    $routeProvider.otherwise({ redirectTo: '/home' });
+    $routeProvider.otherwise({ redirectTo: '/' });
   }]);
 
