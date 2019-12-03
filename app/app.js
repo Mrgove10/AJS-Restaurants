@@ -1,5 +1,5 @@
 'use strict';
-angular.module('myApp', ['mainservice', 'ngRoute', 'myApp.view1', 'myApp.view2'])
+angular.module('myApp', ['mainservice', 'ngRoute', 'myApp.view1', 'myApp.view2', 'myApp.bestview'])
   .controller('MainController', ['$scope', function ($scope) {
     console.log("👋 Hello Thibaut")
     $scope.restaurants =
@@ -124,7 +124,7 @@ angular.module('myApp', ['mainservice', 'ngRoute', 'myApp.view1', 'myApp.view2']
     function ($routeProvider, $locationProvider) {
       $locationProvider.html5Mode(true);
       $routeProvider.when('/', {
-        templateUrl: '../restaurant/restau.html',
+        templateUrl: '../restaurant/restau.html', //base (entry point html)
         controller: 'MainController'
       });
       $routeProvider.otherwise({ redirectTo: '/' });
