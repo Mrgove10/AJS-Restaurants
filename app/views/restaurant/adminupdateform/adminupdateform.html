@@ -1,0 +1,44 @@
+<h4>Your info</h4>
+<form name="updateform" novalidate>
+    <div class="form-group">
+        <div style="height: 24px; color: red;">
+            <div ng-show="updateform.updatedate.$invalid && updateform.updatedate.$dirty">
+                entree une date</div>
+        </div>
+        <h5 for="dateinput">Last visit :</h5>
+        <input required type="date" class="form-control" id="dateinput" name="updatedate"
+            ng-model="myrestau.dateLastVisite">
+    </div>
+    <div class="form-group">
+        <div style="height: 24px; color: red;">
+            <div ng-show="updateform.updatenote.$invalid && updateform.updatenote.$dirty">
+                entreeee une note</div>
+        </div>
+        <h5 for="rating">Notation :</h5>
+        <select class="form-control" id="rating" required ng-model="myrestau.noteLastVisite" name="updatenote">
+            <option value=""></option>
+            <option value="1">⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="5">⭐⭐⭐⭐⭐</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <div style="height: 24px; color: red;">
+            <div ng-show="updateform.updatecomment.$invalid && updateform.updatecomment.$dirty">
+                Veuillez écrire
+                un
+                commentaire.
+            </div>
+        </div>
+        <h5 for="commentinput">Your comment :</h5>
+        <textarea required maxlength="255" type="textarea" class="form-control" id="commentinput"
+            ng-model="myrestau.lastcomment" name="updatecomment"></textarea>
+    </div>
+    <button class="btn btn-danger" ng-click="cancel()">Cancel ❌</button>
+    <button type="submit" class="btn btn-primary" ng-click="valider()" ng-disabled="updateform.$invalid">Submit
+        ✔</button>
+    <button type="submit" class="btn btn-primary" ng-click="delete()">Delete
+        🚮</button>
+</form>

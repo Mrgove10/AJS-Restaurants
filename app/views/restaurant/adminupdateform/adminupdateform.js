@@ -1,7 +1,7 @@
 'use strict';
-angular.module('myApp').directive('updateform', [function () {
+angular.module('myApp').directive('adminupdateform', [function () {
     return {
-        templateUrl: 'restaurant/updateform/updateform.html',
+        templateUrl: 'views/restaurant/adminupdateform/adminupdateform.html',
         scope: {
             restaudetail: '='
         },
@@ -20,6 +20,11 @@ angular.module('myApp').directive('updateform', [function () {
                 scope.annuler = function () {
                     scope.myrestau = angular.copy(scope.restaudetail);
                     scope.updateform.$setPristine();
+                }
+
+                //delete button
+                scope.delete = function () {
+                    scope.myrestau = null;//todo : me
                 }
         }
     }
