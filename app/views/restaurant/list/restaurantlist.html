@@ -5,7 +5,7 @@
             <th>📍 Location</th>
             <th>📅 Last visite</th>
             <th>⭐ Last rating</th>
-            <th>🖊 Modify</th>
+            <th>🖊 modify rating</th>
         </tr>
         <tr ng-repeat="rest in restaurants" ng-click="selectRestau(rest)" style="cursor:pointer;">
             <td>{{rest.name}} </td>
@@ -18,7 +18,7 @@
                 <div ng-switch-when="4">⭐⭐⭐⭐</div>
                 <div ng-switch-when="5">⭐⭐⭐⭐⭐</div>
             </td>
-            <td><button class="btn">Edit</button></td>
+            <td><a href="/edit/{{rest.id}}"><button class="btn btn-info">Edit</button></a></td>
         </tr>
     </table>
 </div>

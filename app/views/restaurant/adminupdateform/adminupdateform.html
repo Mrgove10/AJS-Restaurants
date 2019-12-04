@@ -1,41 +1,63 @@
-<h4>Your info</h4>
+<h4>Edit Restaurant information</h4>
 <form name="updateform" novalidate>
+    <!--nom-->
     <div class="form-group">
         <div style="height: 24px; color: red;">
             <div ng-show="updateform.updatedate.$invalid && updateform.updatedate.$dirty">
-                entree une date</div>
+                Veuillez écrire
+                un nom.</div>
         </div>
-        <h5 for="dateinput">Last visit :</h5>
-        <input required type="date" class="form-control" id="dateinput" name="updatedate"
-            ng-model="myrestau.dateLastVisite">
+        <h5 for="dateinput">Restaurant Name:</h5>
+        <input required  type="text" class="form-control" id="commentinput"
+            ng-model="myrestau.name" name="updatecomment"></input>
     </div>
-    <div class="form-group">
-        <div style="height: 24px; color: red;">
-            <div ng-show="updateform.updatenote.$invalid && updateform.updatenote.$dirty">
-                entreeee une note</div>
-        </div>
-        <h5 for="rating">Notation :</h5>
-        <select class="form-control" id="rating" required ng-model="myrestau.noteLastVisite" name="updatenote">
-            <option value=""></option>
-            <option value="1">⭐</option>
-            <option value="2">⭐⭐</option>
-            <option value="3">⭐⭐⭐</option>
-            <option value="4">⭐⭐⭐⭐</option>
-            <option value="5">⭐⭐⭐⭐⭐</option>
-        </select>
-    </div>
+    <!--adress-->
     <div class="form-group">
         <div style="height: 24px; color: red;">
             <div ng-show="updateform.updatecomment.$invalid && updateform.updatecomment.$dirty">
                 Veuillez écrire
-                un
-                commentaire.
+                une adress.
             </div>
         </div>
-        <h5 for="commentinput">Your comment :</h5>
-        <textarea required maxlength="255" type="textarea" class="form-control" id="commentinput"
-            ng-model="myrestau.lastcomment" name="updatecomment"></textarea>
+        <h5 for="commentinput">adress :</h5>
+        <input required  type="text" class="form-control" id="commentinput"
+            ng-model="myrestau.address" name="updatecomment"></textarea>
     </div>
+    <!--description-->
+    <div class="form-group">
+        <div style="height: 24px; color: red;">
+            <div ng-show="updateform.updatecomment.$invalid && updateform.updatecomment.$dirty">
+                Veuillez écrire
+                une description.
+            </div>
+        </div>
+        <h5 for="commentinput">Description :</h5>
+        <textarea required  type="textarea" class="form-control" id="commentinput"
+            ng-model="myrestau.about" name="updatecomment"></textarea>
+    </div>
+    <!--owner-->
+    <div class="form-group">
+        <div style="height: 24px; color: red;">
+            <div ng-show="updateform.updatedate.$invalid && updateform.updatedate.$dirty">
+                Veuillez écrire
+                un nom.</div>
+        </div>
+        <h5 for="dateinput">Owner name :</h5>
+        <input required  type="text" class="form-control" id="commentinput"
+            ng-model="myrestau.ownerName" name="updatecomment"></input>
+    </div>
+    <!--email-->
+    <div class="form-group">
+        <div style="height: 24px; color: red;">
+            <div ng-show="updateform.updatedate.$invalid && updateform.updatedate.$dirty">
+                Veuillez écrire
+                un email.</div>
+        </div>
+        <h5 for="dateinput">Email :</h5>
+        <input required type="email" class="form-control" id="mailinput"
+            ng-model="myrestau.email" name="updatecomment"></input>
+    </div>
+
     <button class="btn btn-danger" ng-click="cancel()">Cancel ❌</button>
     <button type="submit" class="btn btn-primary" ng-click="valider()" ng-disabled="updateform.$invalid">Submit
         ✔</button>

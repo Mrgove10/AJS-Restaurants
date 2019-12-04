@@ -3,7 +3,7 @@
   <b>📍 Location :</b> {{restaudetail.address.number}} {{restaudetail.address.road}} {{restaudetail.address.city}}
   {{restaudetail.address.state}}</br>
   <b>🍩 Description :</b> {{restaudetail.about}}</br>
-  <b>👩‍🍳 Owner :</b> {{restaudetail.ownerName.first}} {{restaudetail.ownerName.last}}</br>
+  <b>👩‍🍳 Owner :</b> {{restaudetail.ownerName}}</br>
   <b>📧 Email :</b> {{restaudetail.email}}</br>
   <hr>
   <h4>Your last thoughts</h4>
@@ -17,6 +17,6 @@
     <span ng-switch-when="4">⭐⭐⭐⭐</span>
     <span ng-switch-when="5">⭐⭐⭐⭐⭐</span>
   </ng-switch></br>
- <!--<updateform restaudetail="restaudetail"></updateform>-->
+<!-- <updateform restaudetail="restaudetail"></updateform>-->
  <adminupdateform restaudetail="restaudetail"></adminupdateform>
 </div>
