@@ -109,6 +109,6 @@ angular.module('myApp', ['mainservice', 'ngRoute', 'myApp.view1', 'myApp.view2',
         templateUrl: 'views/restaurant/restau.html', //base (entry point html)
         controller: 'MainController'
       });
-      $routeProvider.otherwise({ redirectTo: '/' });
+      $routeProvider.otherwise({ redirectTo: '/index.html' });
     }]);
 

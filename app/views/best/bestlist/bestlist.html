@@ -1,8 +1,25 @@
-<td>{{restau.name}} </td>
-<td>{{restau.adress}}</td>
-<td>{{restau.dateLastVisite}}</td>
-<td>{{restau.noteLastVisite}}</td>
-<td>{{restau.ownerName}}</td>
-<td>{{restau.email}}</td>
-<td>{{restau.lastComment}}</td>
-<updateform></updateform>
+<h1>best</h1>
+<!--<div>
+    <table class="table table-striped" style="width:100%">
+        <tr>
+            <th>📛 Name</th>
+            <th>📍 Location</th>
+            <th>📅 Last visite</th>
+            <th>⭐ Last rating</th>
+            <th>🖊 modify rating</th>
+        </tr>
+        <tr ng-repeat="rest in restaurants" ng-click="selectRestau(rest)" style="cursor:pointer;">
+            <td>{{rest.name}} </td>
+            <td>{{rest.address.number}} {{rest.address.road}} {{rest.address.city}} {{rest.address.state}}</td>
+            <td>{{rest.dateLastVisite | date:'yyyy-MM-dd'}}</td>
+            <td ng-switch="rest.noteLastVisite">
+                <div ng-switch-when="1">⭐</div>
+                <div ng-switch-when="2">⭐⭐</div>
+                <div ng-switch-when="3">⭐⭐⭐</div>
+                <div ng-switch-when="4">⭐⭐⭐⭐</div>
+                <div ng-switch-when="5">⭐⭐⭐⭐⭐</div>
+            </td>
+            <td><a href="/edit/{{rest.id}}"><button class="btn btn-info">Edit</button></a></td>
+        </tr>
+    </table>
+</div>-->
