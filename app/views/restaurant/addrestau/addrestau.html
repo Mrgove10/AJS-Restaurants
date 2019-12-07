@@ -1,3 +1,84 @@
-<button ng-click="addrestau()">addddddddd</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Add a restaurant
+</button>
 
-<p ng-if="adding">tests</p>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add a restaurant</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form name="creationform" novalidate>
+                    <!--nom-->
+                    <div class="form-group">
+                        <div style="height: 24px; color: red;">
+                            <div ng-show="createform.updatedate.$invalid && createform.updatedate.$dirty">
+                                Veuillez écrire
+                                un nom.</div>
+                        </div>
+                        <h5 for="dateinput">Restaurant Name:</h5>
+                        <input required type="text" class="form-control" id="commentinput" ng-model="tmprestau.name"
+                            name="updatecomment"></input>
+                    </div>
+                    <!--adress-->
+                    <div class="form-group">
+                        <div style="height: 24px; color: red;">
+                            <div ng-show="createform.updatecomment.$invalid && createform.updatecomment.$dirty">
+                                Veuillez écrire
+                                une adress.
+                            </div>
+                        </div>
+                        <h5 for="commentinput">Adress :</h5>
+                        <input required type="text" class="form-control" id="commentinput" ng-model="tmprestau.address"
+                            name="updatecomment"></textarea>
+                    </div>
+                    <!--description-->
+                    <div class="form-group">
+                        <div style="height: 24px; color: red;">
+                            <div ng-show="createform.updatecomment.$invalid && createform.updatecomment.$dirty">
+                                Veuillez écrire
+                                une description.
+                            </div>
+                        </div>
+                        <h5 for="commentinput">Description :</h5>
+                        <textarea required type="textarea" class="form-control" id="commentinput"
+                            ng-model="tmprestau.about" name="updatecomment"></textarea>
+                    </div>
+                    <!--owner-->
+                    <div class="form-group">
+                        <div style="height: 24px; color: red;">
+                            <div ng-show="createform.updatedate.$invalid && createform.updatedate.$dirty">
+                                Veuillez écrire
+                                un nom.</div>
+                        </div>
+                        <h5 for="dateinput">Owner name :</h5>
+                        <input required type="text" class="form-control" id="commentinput" ng-model="tmprestau.ownerName"
+                            name="updatecomment"></input>
+                    </div>
+                    <!--email-->
+                    <div class="form-group">
+                        <div style="height: 24px; color: red;">
+                            <div ng-show="createform.updatedate.$invalid && createform.updatedate.$dirty">
+                                Veuillez écrire
+                                un email.</div>
+                        </div>
+                        <h5 for="dateinput">Email :</h5>
+                        <input required type="email" class="form-control" id="mailinput" ng-model="tmprestau.email"
+                            name="updatecomment"></input>
+                    </div>
+                    <button class="btn btn-danger" class="close" data-dismiss="modal" aria-label="Close">Cancel
+                        ❌</button>
+                    <button type="submit" class="btn btn-primary" ng-click="valider()" ng-disabled="createform.$invalid"
+                        class="close" data-dismiss="modal" aria-label="Close">Submit
+                        ✔</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
