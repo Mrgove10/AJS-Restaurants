@@ -1,5 +1,5 @@
 'use strict';
-angular.module('myApp', ['mainservice', 'ngRoute', 'myApp.view1', 'myApp.view2', 'myApp.bestview','myApp.edit'])
+angular.module('myApp', ['mainservice', 'ngRoute'/*, 'myApp.view1', 'myApp.view2'*/, 'myApp.bestview','myApp.edit'])
   .controller('MainController', ['$scope', function ($scope) {
     console.log("👋 Hello Thibaut")
     $scope.restaurants =
@@ -111,4 +111,3 @@ angular.module('myApp', ['mainservice', 'ngRoute', 'myApp.view1', 'myApp.view2',
       });
       $routeProvider.otherwise({ redirectTo: '/index.html' });
     }]);
-

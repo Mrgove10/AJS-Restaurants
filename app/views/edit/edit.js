@@ -1,11 +1,9 @@
-'use strict';
-
-angular.module('myApp.edit', ['ngRoute', 'mainservice'])
-    .config(['$routeProvider', function ($routeProvider) {
-        $routeProvider.when('/edit/:id', {
-            templateUrl: 'views/edit/edit.html',
-            controller: 'BestCtrl'
-        });
-    }])
-    .controller('BestCtrl', [function () {
-    }]);
+/*'use strict';
+angular.module('myApp').directive('bestrestaulist', [function () {
+    return {
+        templateUrl: 'views/best/bestlist/bestlist.html',
+        scope: {
+            id: $routeParams.id
+        }
+    }
+}]);*/
