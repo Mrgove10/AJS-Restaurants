@@ -11,16 +11,16 @@ angular.module('myApp').directive('updateform', [function () {
                 scope.myrestau = angular.copy(scope.restaudetail);
             }),
 
-                //Validate button
-                scope.valider = function () {
-                    angular.copy(scope.myrestau, scope.restaudetail);
-                },
+            //Validate button
+            scope.valider = function () {
+                angular.copy(scope.myrestau, scope.restaudetail);
+            },
 
-                //Cancel button
-                scope.annuler = function () {
-                    scope.myrestau = angular.copy(scope.restaudetail);
-                    scope.updateform.$setPristine();
-                }
+            //Cancel button
+            scope.annuler = function () {
+                scope.myrestau = angular.copy(scope.restaudetail);
+                scope.updateform.$setPristine();
+            }
         }
     }
 }]);

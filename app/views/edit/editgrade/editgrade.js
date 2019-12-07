@@ -3,7 +3,10 @@ angular.module('myApp').directive('editrestaugrade', [function () {
     return {
         templateUrl: 'views/edit/editgrade/editgrade.html',
         scope: {
-            id: $routeParams.id
+            id: '='
+        },
+        link: function (scope) {
+            scope.id = $routeParams.id
         }
     }
 }]);
