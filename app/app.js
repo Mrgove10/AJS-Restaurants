@@ -1,7 +1,6 @@
 'use strict';
-angular.module('myApp', ['mainservice', 'ngRoute'/*, 'myApp.view1', 'myApp.view2'*/, 'myApp.bestview','myApp.edit'])
+angular.module('myApp', ['mainservice', 'ngRoute'/*, 'myApp.view1', 'myApp.view2'*/, 'myApp.edit'])
   .controller('MainController', ['$scope', function ($scope) {
-    console.log("👋 Hello Thibaut")
     $scope.restaurants =
       [
         {
@@ -105,9 +104,16 @@ angular.module('myApp', ['mainservice', 'ngRoute'/*, 'myApp.view1', 'myApp.view2
   ).config(['$routeProvider', '$locationProvider',
     function ($routeProvider, $locationProvider) {
       $locationProvider.html5Mode(true);
-      $routeProvider.when('/', {
+
+      $routeProvider
+      .when('/', {
         templateUrl: 'views/restaurant/restau.html', //base (entry point html)
         controller: 'MainController'
+      })
+      .when('/best', {
+        templateUrl: 'views/best/best.html',
+        controller: 'MainController'
       });
+      
       $routeProvider.otherwise({ redirectTo: '/index.html' });
     }]);
