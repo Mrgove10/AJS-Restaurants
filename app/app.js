@@ -17,7 +17,7 @@ angular.module('myApp', ['mainservice', 'ngRoute'/*, 'myApp.view1', 'myApp.view2
           "ownerName": "Lupe Dudley",
           "dateLastVisite": "",
           "lastcomment": "",
-          "noteLastVisite": ""
+          "noteLastVisite": "4"
         },
         {
           "guid": "77715761-91c6-496b-8801-871488715b69",
@@ -33,7 +33,7 @@ angular.module('myApp', ['mainservice', 'ngRoute'/*, 'myApp.view1', 'myApp.view2
           "ownerName": "Bean Flynn",
           "dateLastVisite": "",
           "lastcomment": "",
-          "noteLastVisite": ""
+          "noteLastVisite": "2"
         },
         {
           "guid": "938e02aa-4e5a-499c-9052-597b1ee1a21c",
@@ -49,7 +49,7 @@ angular.module('myApp', ['mainservice', 'ngRoute'/*, 'myApp.view1', 'myApp.view2
           "ownerName": "Alta Ortega",
           "dateLastVisite": "",
           "lastcomment": "",
-          "noteLastVisite": ""
+          "noteLastVisite": "5"
         },
         {
           "guid": "05fe7b1a-63da-4589-a1b8-76b893b7c8ab",
@@ -65,7 +65,7 @@ angular.module('myApp', ['mainservice', 'ngRoute'/*, 'myApp.view1', 'myApp.view2
           "ownerName": "May Franklin",
           "dateLastVisite": "",
           "lastcomment": "",
-          "noteLastVisite": ""
+          "noteLastVisite": "1"
         },
         {
           "guid": "1cd3e751-343f-4a24-9cb7-a7c8059dcd8f",
@@ -81,7 +81,7 @@ angular.module('myApp', ['mainservice', 'ngRoute'/*, 'myApp.view1', 'myApp.view2
           "ownerName": "Collier Palmer",
           "dateLastVisite": "",
           "lastcomment": "",
-          "noteLastVisite": ""
+          "noteLastVisite": "3"
         },
         {
           "guid": "193d4231-9a43-471f-9217-282f2650545b",
@@ -97,7 +97,7 @@ angular.module('myApp', ['mainservice', 'ngRoute'/*, 'myApp.view1', 'myApp.view2
           "ownerName": "Ramona Singleton",
           "dateLastVisite": "",
           "lastcomment": "",
-          "noteLastVisite": ""
+          "noteLastVisite": "2"
         }
       ]
   }]
@@ -114,6 +114,6 @@ angular.module('myApp', ['mainservice', 'ngRoute'/*, 'myApp.view1', 'myApp.view2
         templateUrl: 'views/best/best.html',
         controller: 'MainController'
       });
-      
+
       $routeProvider.otherwise({ redirectTo: '/index.html' });
     }]);
