@@ -104,8 +104,11 @@ angular.module('myApp', ['mainservice', 'ngRoute'])
   ).config(['$routeProvider', '$locationProvider',
     function ($routeProvider, $locationProvider) {
       $locationProvider.html5Mode(true);
-
       $routeProvider
+      .when('/index.html', {
+        templateUrl: 'views/restaurant/restau.html',
+        controller: 'MainController'
+      })
       .when('/', {
         templateUrl: 'views/restaurant/restau.html', //base (entry point html)
         controller: 'MainController'
@@ -118,5 +121,5 @@ angular.module('myApp', ['mainservice', 'ngRoute'])
         templateUrl: 'views/edit/edit.html',
         controller: 'MainController'
       })
-      .otherwise({ redirectTo: '/index.html' });
+      .otherwise({ redirectTo: '/' });
     }]);

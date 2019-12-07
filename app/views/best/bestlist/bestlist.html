@@ -2,11 +2,14 @@
     <table class="table table-striped" style="width:100%">
         <tr>
             <th>📛 Name</th>
+            <th>📍 Location</th>
             <th>📅 Last visite</th>
             <th>⭐ Last rating</th>
+            <th>🖊 Modify rating</th>
         </tr>
         <tr ng-repeat="rest in restaurants" ng-click="selectRestau(rest)">
             <td>{{rest.name}} </td>
+            <td>{{rest.address.number}} {{rest.address.road}} {{rest.address.city}} {{rest.address.state}}</td>
             <td>{{rest.dateLastVisite | date:'yyyy-MM-dd'}}</td>
             <td ng-switch="rest.noteLastVisite">
                 <div ng-switch-when="1">⭐</div>
@@ -15,6 +18,7 @@
                 <div ng-switch-when="4">⭐⭐⭐⭐</div>
                 <div ng-switch-when="5">⭐⭐⭐⭐⭐</div>
             </td>
+            <td><a ng-href="/edit/{{rest.guid}}"><button class="btn btn-info">Edit</button></a></td>
         </tr>
     </table>
 </div>

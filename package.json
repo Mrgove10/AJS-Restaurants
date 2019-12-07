@@ -1,8 +1,8 @@
 {
-  "name": "angular-seed",
+  "name": "AJSRestaurant",
   "private": true,
-  "version": "0.0.0",
-  "description": "A starter project for AngularJS",
+  "version": "1.0.0",
+  "description": "Restauant School Project",
   "repository": "https://github.com/angular/angular-seed",
   "license": "MIT",
   "dependencies": {
