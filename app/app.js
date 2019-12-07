@@ -1,5 +1,5 @@
 'use strict';
-angular.module('myApp', ['mainservice', 'ngRoute'/*, 'myApp.view1', 'myApp.view2'*/, 'myApp.edit'])
+angular.module('myApp', ['mainservice', 'ngRoute'])
   .controller('MainController', ['$scope', function ($scope) {
     $scope.restaurants =
       [
@@ -113,7 +113,10 @@ angular.module('myApp', ['mainservice', 'ngRoute'/*, 'myApp.view1', 'myApp.view2
       .when('/best', {
         templateUrl: 'views/best/best.html',
         controller: 'MainController'
-      });
-
-      $routeProvider.otherwise({ redirectTo: '/index.html' });
+      })
+      .when('/edit/:id', {
+        templateUrl: 'views/edit/edit.html',
+        controller: 'MainController'
+      })
+      .otherwise({ redirectTo: '/index.html' });
     }]);

@@ -1,4 +1,4 @@
-/*'use strict';
+'use strict';
 angular.module('myApp').directive('bestrestaulist', [function () {
     return {
         templateUrl: 'views/best/bestlist/bestlist.html',
@@ -6,4 +6,4 @@ angular.module('myApp').directive('bestrestaulist', [function () {
             id: $routeParams.id
         }
     }
-}]);*/
+}]);
