@@ -9,7 +9,7 @@
         </tr>
         <tr ng-repeat="rest in restaurants" ng-click="selectRestau(rest)" style="cursor:pointer;">
             <td>{{rest.name}} </td>
-            <td>{{restaudetail.address}} <!--{{rest.address.number}} {{rest.address.road}} {{rest.address.city}} {{rest.address.state}}--></td>
+            <td>{{rest.address}} <!--{{rest.address.number}} {{rest.address.road}} {{rest.address.city}} {{rest.address.state}}--></td>
             <td>{{rest.dateLastVisite | date:'yyyy-MM-dd'}}</td>
             <td ng-switch="rest.noteLastVisite">
                 <div ng-switch-when="1">⭐</div>

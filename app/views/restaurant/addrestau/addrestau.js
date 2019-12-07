@@ -3,8 +3,7 @@ angular.module('myApp').directive('addrestau', [function () {
     return {
         templateUrl: 'views/restaurant/addrestau/addrestau.html',
         scope: {
-            restaurants: '=',
-            restaudetail: '='
+            restaurants: '='
         },
         link: function (scope) {
             //function when a restaurant is selected
