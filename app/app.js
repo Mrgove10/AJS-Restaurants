@@ -1,6 +1,7 @@
 'use strict';
 angular.module('myApp', ['mainservice', 'ngRoute'])
-  .controller('MainController', ['$scope', function ($scope) {
+  .controller('MainController', ['$scope', '$route', function ($scope, $routeParams) {
+    $scope.selectedid = $routeParams.param1;
     $scope.restaurants =
       [
         {
@@ -69,7 +70,7 @@ angular.module('myApp', ['mainservice', 'ngRoute'])
           "lastcomment": "",
           "noteLastVisite": "2"
         }
-      ]
+    ]
   }]
   ).config(['$routeProvider', '$locationProvider',
     function ($routeProvider, $locationProvider) {

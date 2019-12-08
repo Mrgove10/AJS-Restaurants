@@ -3,7 +3,8 @@ angular.module('myApp').directive('fulldetails', [function () {
     return {
         templateUrl: 'views/restaurant/fulldetails/fulldetails.html',
         scope: {
-            restaudetail: '='
+            restaudetail: '=',
+            restaurants: '='
         }
     }
 }]);

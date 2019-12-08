@@ -3,7 +3,8 @@ angular.module('myApp').directive('adminupdateform', [function () {
     return {
         templateUrl: 'views/restaurant/adminupdateform/adminupdateform.html',
         scope: {
-            restaudetail: '='
+            restaudetail: '=',
+            restaurants: '='
         },
         link: function (scope) {
             // watches the changes
@@ -24,6 +25,10 @@ angular.module('myApp').directive('adminupdateform', [function () {
 
                 //delete button
                 scope.delete = function () {
+                    scope.restaurants.find(function(id){
+                        return scope.restaudetail.guid == id;
+                    })
+                    scope.restaurants.de
                     scope.myrestau = null;//todo : me
                 }
         }
