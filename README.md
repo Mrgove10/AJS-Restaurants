@@ -1,11 +1,11 @@
 # AJS-Restaurant
 
-to run : ```npm install``` then ```npm start```
+To run : ```npm install``` then ```npm start```
 
 This projet has created in me a personal hate for angularJS, it never works when you want it to and work randomly when you don't need it to work. I am VERY happy that it is depricated and dying and should never be used by anyone, ever !! Long live [angular cli](https://cli.angular.io/) !!
-I LOST (yes lost, i learnt nothing because it was wayy to frustrating) way to much time on this and i hope that i will never work on angular js ever again.
+I LOST (yes lost, i learnt nothing because it was wayy to frustrating) way to much time on this and i hope that i will never work on angularJS ever again.
 
-## bugs of this shitty app
+## bugs in this ******* app
 
 - scope is not maintained when switching pages
 - modifying the grade obviously doesnt work
