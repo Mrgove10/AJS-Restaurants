@@ -1,4 +1,43 @@
-<h1>EDIT WORKS</h1>
-now please jgshwj ndfhbcsz'kcxzny:hkb,j</br>
-{{id}}</br>
-{{selectedrestau}}</br>
+<h3>{{selectedrestau[0].name}}</h3>
+{{selectedrestau[0]}}</br>
+<form name="updategradeform" novalidate>
+    <div class="form-group">
+        <div style="height: 24px; color: red;">
+            <div ng-show="updategradeform.updatedate.$invalid && updategradeform.updatedate.$dirty">
+                entree une date</div>
+        </div>
+        <h5 for="dateinput">Last visit :</h5>
+        <input required type="date" class="form-control" id="dateinput" name="updatedate"
+            ng-model="selectedrestau[0].dateLastVisite">
+    </div>
+    <div class="form-group">
+        <div style="height: 24px; color: red;">
+            <div ng-show="updategradeform.updatenote.$invalid && updategradeform.updatenote.$dirty">
+                entreeee une note</div>
+        </div>
+        <h5 for="rating">Notation :</h5>
+        <select class="form-control" id="rating" required ng-model="selectedrestau[0].noteLastVisite" name="updatenote">
+            <option value=""></option>
+            <option value="1">⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="5">⭐⭐⭐⭐⭐</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <div style="height: 24px; color: red;">
+            <div ng-show="updategradeform.updatecomment.$invalid && updategradeform.updatecomment.$dirty">
+                Veuillez écrire
+                un
+                commentaire.
+            </div>
+        </div>
+        <h5 for="commentinput">Your comment :</h5>
+        <textarea required maxlength="255" type="textarea" class="form-control" id="commentinput"
+            ng-model="selectedrestau[0].lastcomment" name="updatecomment"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" ng-click="valider()" ng-disabled="updategradeform.$invalid">Submit
+        ✔</button>
+    <button class="btn btn-danger" ng-click="cancel()">Cancel ❌</button>
+</form>
