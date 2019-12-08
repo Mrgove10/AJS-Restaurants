@@ -1,5 +1,5 @@
 'use strict';
-angular.module('MainController').directive('editrestaugrade', [function () {
+angular.module('myApp').directive('editgrade', [function () {
     return {
         templateUrl: 'views/edit/editgrade/editgrade.html',
         scope: {
