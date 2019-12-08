@@ -6,6 +6,7 @@ angular.module('myApp').directive('editgrade', [function () {
             id: '='
         },
         link: function (scope) {
+            console.log(scope)
             console.log(scope.id)
         }
     }

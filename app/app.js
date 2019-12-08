@@ -1,7 +1,7 @@
 'use strict';
 angular.module('myApp', ['mainservice', 'ngRoute'])
   .controller('MainController', ['$scope', '$route', function ($scope, $routeParams) {
-    $scope.selectedid = $routeParams.param1;
+    $scope.selectedid = $routeParams.id;
     $scope.restaurants =
       [
         {
