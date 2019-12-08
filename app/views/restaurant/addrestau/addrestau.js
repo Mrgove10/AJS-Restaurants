@@ -13,14 +13,12 @@ angular.module('myApp').directive('addrestau', [function () {
 
                 //Validate button
                 scope.valider = function () {
-                    console.log("adding");
-                    console.log(scope.tmprestau);
-                    scope.tmprestau.guid = uuidv4()
+                    scope.tmprestau.guid = scope.uuidv4()
                     scope.restaurants.push(scope.tmprestau);
-                    console.log(scope.restaurants);
+                    //TODO : mail doesnt work because there is no verifictaion i guesse (lol)
                 },
 
-                function uuidv4() {
+                scope.uuidv4 = function() {
                     return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
                         var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
                         return v.toString(16);

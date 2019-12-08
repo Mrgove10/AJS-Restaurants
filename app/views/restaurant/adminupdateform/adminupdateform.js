@@ -25,11 +25,14 @@ angular.module('myApp').directive('adminupdateform', [function () {
 
                 //delete button
                 scope.delete = function () {
-                    scope.restaurants.find(function(id){
+                    var r = scope.restaurants.find(function(id){
                         return scope.restaudetail.guid == id;
                     })
-                    scope.restaurants.de
-                    scope.myrestau = null;//todo : me
+                    console.log(r);
+                    // console.log(scope.restaurants.indexOf(r))
+                    // restaurants.splice()
+                    //scope.myrestau = null;
+                    //TODO : me
                 }
         }
     }
